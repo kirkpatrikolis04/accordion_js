@@ -20,7 +20,6 @@ acc_arr.forEach(acc => {
             e.target.parentElement.parentElement.children[1].classList.add('active');
             e.target.classList.add('active');
             e.target.previousElementSibling.innerHTML = 'Close'; 
-
         }
 
         if(e.target.parentElement.parentElement.classList.contains('accordion_1')){
