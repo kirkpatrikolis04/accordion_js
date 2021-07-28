@@ -1,3 +1,5 @@
+// ACCORDION
+
 let acc_arr = document.querySelectorAll('.acc_arr');
 let txt = document.querySelector('.txt');
 let info = document.querySelector('.info');
@@ -57,3 +59,29 @@ acc_arr.forEach(acc => {
     });
 
 });
+
+// IMAGE SLIDER
+
+let slider = document.querySelector('img');
+let img = [];
+let i = 0;
+
+img[0] = 'img/img1.png';
+img[1] = 'img/img2.png';
+img[2] = 'img/img3.png';
+
+slider.src = img[0];
+
+function sliderImg () {
+    slider.src = img[i];
+    if (i < img.length -1) {
+        i++;
+    } else {
+        i = 0;
+    }
+}
+
+setInterval(function() {
+    sliderImg();
+}, 800);
+
